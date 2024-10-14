@@ -74,7 +74,7 @@ public class Pembelian {
                     break;
 
                 default:
-                    System.out.println("Menu tidak valid. Silakan pilih lagi.");
+                    System.out.println("Menu tidak valid anjay. Silakan pilih lagi.");
             }
             System.out.println();
         }
