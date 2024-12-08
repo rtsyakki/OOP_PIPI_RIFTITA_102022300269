@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="InventoryController">
+    <TableView fx:id="albumTable">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="artistColumn" text="Artist"/>
+            <TableColumn fx:id="totalColumn" text="Total"/>
+            <TableColumn fx:id="availableColumn" text="Available"/>
+            <TableColumn fx:id="rentedColumn" text="Rented"/>
+        </columns>
+    </TableView>
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Label text="Name:"/>
+            <TextField fx:id="nameField"/>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Artist:"/>
+            <TextField fx:id="artistField"/>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Total:"/>
+            <TextField fx:id="totalField"/>
+        </VBox>
+    </HBox>
+    <HBox spacing="10">
+        <Button text="Add" onAction="#handleAdd"/>
+        <Button text="Update" onAction="#handleUpdate"/>
+        <Button text="Delete" onAction="#handleDelete"/>
+        <Button text="Rent Selected" onAction="#handleRent"/>
+    </HBox>
+</VBox>
