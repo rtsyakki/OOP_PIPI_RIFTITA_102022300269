@@ -28,7 +28,7 @@ public class App extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("inventory.fxml"));
         Parent root = loader.load();
         InventoryController inventoryController = loader.getController();
-        inventoryController.setApp(this);
+        //inventoryController.setApp(this);
 
         primaryStage.setTitle("Zeppeli's Listening Bar - Inventory");
         primaryStage.setScene(new Scene(root));

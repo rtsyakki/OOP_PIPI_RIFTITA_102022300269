@@ -5,7 +5,6 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class InventoryController {
-    private App app;
 
     @FXML
     private TableView<Album> albumTable;
@@ -28,10 +27,6 @@ public class InventoryController {
     private TextField totalField;
 
     private ObservableList<Album> albumList = FXCollections.observableArrayList();
-
-    public void setApp(App app) {
-        this.app = app;
-    }
 
     @FXML
     public void initialize() {
